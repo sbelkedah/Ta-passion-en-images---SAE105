@@ -1,0 +1,295 @@
+/* 1. BASES ET FOND DU SITE */
+body {
+    font-family: 'MontserratAlternates-Light', sans-serif;
+    min-width: 1024px;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../images/IMG-FOND.jpeg');    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1, section h2, section h3, section p {
+    color: #ffffff; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    text-decoration: none !important;
+}
+
+/* 2. HEADER ET INTRODUCTION */
+header {
+    width: 900px;
+    margin: 10px auto 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.75);
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.intro-bloc {
+    width: 800px;
+    background-color: rgba(48, 48, 48, 0.75);
+    color: #ffffff;
+    margin: 20px auto 40px;
+    padding: 30px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.intro-texte {
+    font-style: italic;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
+}
+
+/* 3. SECTIONS D'ALBUMS (Z-PATTERN) */
+.liste-images {
+    width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+section {
+    width: 900px;
+    margin: 50px auto;
+    padding: 30px 30px; 
+    background-color: rgba(20, 20, 20, 0.75);
+    border: 2px solid #ffffff;
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+
+.bloc-image { 
+    width: 350px; 
+}
+
+.titre-album-pochette {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.image-cliquable {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+.image-cliquable:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
+}
+
+section p {
+    margin-top: 20px; 
+    line-height: 1.6;
+    padding-right: 20px;
+    text-align: justify;
+    hyphens: auto;
+    letter-spacing: -0.4px;  
+}
+
+section p a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.section-gauche .bloc-image { 
+    float: left; 
+    margin-right: 40px; 
+}
+
+.section-droite .bloc-image { 
+    float: right; 
+    margin-left: 40px; 
+}
+
+.section-droite p { 
+    margin-top: 25px; 
+    line-height: 1.6;
+    padding-right: 20px;
+    text-align: justify;
+    hyphens: auto;
+    letter-spacing: -0.5px; 
+    padding-left: 9px;
+}
+
+
+.section-droite .credits-image p, .section-droite .credits-image div {
+    text-align: center;
+    margin: 2px 0;
+}
+
+.credits-image {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.credits-image .artiste {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+.credits-image .label {
+    font-size: 0.75rem;    
+    color: #cccccc;       
+    margin: 2px 0;        
+    font-style: italic;    
+}
+
+.credits-image .source {
+    font-size: 0.75rem;
+    color: #cccccc;
+    font-style: italic;
+    margin: 2px 0 0 0;
+}
+
+.credits-image a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* 4. ZOOM (POPUP) */
+.popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.popup-invisible { 
+    display: none; 
+}
+.popup-visible { 
+    display: block; 
+}
+
+.popup-img {
+    display: block;
+    margin: 5% auto;
+    max-width: 80%;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+/* 5. FORMULAIRE DE CONTRIBUTION */
+.suggestion-message {
+    width: 600px;
+    margin: 40px auto;
+    padding: 15px 30px;    
+    background-color: rgba(124, 124, 124, 0.685);
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.suggestion-message h3 {
+    margin: 0 0 15px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.suggestion-message p {
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+fieldset {
+    width: 600px;
+    margin: 10px auto 40px;
+    padding: 15px 25px 25px 25px; 
+    background-color: rgba(124, 124, 124, 0.685);
+    border: 2px solid #ffffff;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+legend {
+    background-color: #4b4b4b;
+    padding: 5px 15px;          
+    color: #ffffff;             
+    text-transform: uppercase; 
+    border: 1px solid #ffffff; 
+}
+
+fieldset p {
+    margin: 3px 0;
+}
+
+label { 
+    display: block;      
+    margin-top: 5px; 
+    text-align: left;     
+    margin-left: 15%;
+}
+
+label::after {
+    content: " *";
+    color: #ff0000; 
+    font-weight: bold;
+}
+
+input[type="text"], input[type="url"] { 
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    margin: 5px auto; 
+    display: block;
+    box-sizing: border-box;
+}
+
+input:invalid { 
+    border: 1px solid rgba(255, 0, 0, 0.521);
+}
+
+.Envoyer {
+    display: block;
+    margin: 30px 0 10px 110px; 
+    padding: 15px 30px;
+    width: fit-content;   
+    background-color: #333333;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Envoyer:hover {
+    background-color: #ffffff;
+    color: #333333;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* 6. FOOTER */
+footer {
+    width: 900px;
+    margin: 40px auto 20px;
+    padding: 20px;
+    background-color: rgba(20, 20, 20, 0.75);
+    border: 1px solid #ffffff;
+    text-align: center;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+footer a { 
+    color: #ffffff; 
+    text-decoration: underline; 
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Passion pour la Musique</title>
+    <link rel="icon" type="image/jpg" href="images/IMG-LOGO.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JavaScript/data.js"></script>
+    <script src="JavaScript/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Ma Passion pour la Musique</h1>
+        <div class="intro-bloc">
+         <p class="intro-texte">
+    Depuis mon enfance, j’adore écouter de la musique. Au fil des années, certains albums m’ont marqué de différentes manières. Le genre que j’écoutais, et que j’écoute toujours le plus, est le rap. Cela fait près d’une décennie que je suis auditeur actif de ce genre.  
+    Grâce à YouTube, puis plus tard aux applications de streaming comme Spotify, j’ai découvert et écouté énormément d’albums, ce qui a considérablement enrichi ma culture musicale, aussi bien dans le rap que dans la musique en général.  
+    Je vous propose ici de découvrir trois albums qui m’ont marqué. Le premier est du rap, le deuxième explore un style plus hybride, entre rap alternatif, funk, R&B et soul, et le troisième est également du rap. Ce sont trois albums connus du public qui ont marqué ma génération.
+        </p>
+        </div>
+    </header>
+
+    <main>
+        <div class="liste-images"></div>
+    </main>
+
+    <div class="popup popup-invisible">
+        <img class="popup-img" src="" alt="Zoom album">
+    </div>
+
+    <section id="contribution">
+        <section class="suggestion-message">
+            <h3>Et vous ?</h3>
+            <p>Quel album a marqué votre vie ? Suggérez-moi un projet qui vous tient à cœur pour que je puisse l'écouter et en parler avec vous de manière CNV !</p>
+        </section>
+        
+        <form id="form-contrib">
+            <fieldset>
+                <legend>Suggérer un album à ajouter</legend>
+                <p>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </p>
+                <p>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </p>
+                <p>
+                    <label for="title">Titre de l'album :</label>
+                    <input type="text" id="title" name="titre" required>
+                </p>
+                <p>
+                    <label for="description">Description (max 200 caractères) :</label>
+                    <input type="text" id="description" name="description" maxlength="200" placeholder="Décrivez l'album brièvement..." required>
+                </p>
+                <p> 
+                    <label for="url-image">URL de l'image :</label>
+                    <input type="url" id="url-image" name="url" placeholder="https://..." required>
+                </p>
+                <p>
+                    <label for="credits">Crédits / Copyright :</label>
+                    <input type="text" id="credits" name="copyright" placeholder="Ex: © 2025 Sony Music / Photo par ..." required>
+                </p>
+                <input type="submit" value="Envoyer la suggestion" class="Envoyer">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Sami Belkedah - SAÉ 1.05 - Projet « Ta passion en images »</p>
+        <p>
+            Hébergé sur : 
+            <a href="http://belkedah.projetsmmichamps.fr/sae105" target="_blank">belkedah.projetsmmichamps.fr</a>
+        </p>
+        <p><a href="HTML/mentions-legales.html">Mentions légales & Propriété intellectuelle</a></p>
+           <a href="#" class="back-to-top" title="Retour en haut de page">⬆</a>  
+    </footer>
+
+</body>
+</html>
