@@ -36,7 +36,9 @@ Le projet respecte une arborescence clair pour une meilleure maintenance :
 
 ### Preuves de fonctionnement
 ![Capture du Panneau XAMPP](images/xampp-control.png)
+
 *1 : Module Apache activé sur le port 80*
 
 ![Rendu du site en localhost](images/rendu-local.png)
+
 *2 : Test du site sur le serveur local*
